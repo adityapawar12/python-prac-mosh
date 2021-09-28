@@ -106,7 +106,6 @@ if has_high_income and not has_crim_record :
 	
 	
 # comparison operators
-
 temperature = 15
 if temperature >= 30 :
 	print("it's a hot day")
@@ -114,3 +113,14 @@ elif temperature <= 10 :
 	print("it's a cold day")
 else :
 	print("it's a nice day")
+	
+
+# while loop
+w_num = 0
+while w_num < 6 :
+    print('*' * w_num)
+    w_num += 1
+    
+print('done')
+
+# for loop
