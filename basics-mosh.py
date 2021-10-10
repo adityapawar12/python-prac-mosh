@@ -120,6 +120,7 @@ while w_num < 3 :
     
 print('done')
 
+
 # for loop
 for_str = "py"
 for_list = ["p", "y"]
@@ -140,3 +141,97 @@ for num in for_range :
 for x in range(1, 4) :
     for y in range(1, 3) :
         print(f"({x} {y})")
+        
+# lists
+names = ['aditya', 'milind', 'rutik', 'rahul']
+print(names)
+print(names[3])
+print(names[-3])
+print(names[1:3])
+
+# 2d lists
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6]
+]
+print(matrix)
+print(matrix[0])
+print(matrix[0][0])
+
+for row in matrix :
+    for item in row :
+        print(item)
+        
+        
+# list methods
+numbers = [3, 5, 6, 2, 6]
+print(numbers)
+numbers_2 = numbers.copy()
+print(numbers_2)
+numbers.append(20)
+print(numbers)
+numbers.insert(0, 10)
+print(numbers)
+numbers.remove(3)
+print(numbers)
+numbers.pop()
+print(numbers)
+print(numbers.index(2))
+print(2 in numbers)
+print(numbers.count(6))
+numbers.sort()
+#numbers.reverse()
+print(numbers)
+numbers.clear()
+print(numbers)
+
+
+# tuples 
+
+games = ('coc', 'cod', 'limbo', 'bgmi')
+print("number of times the coc appeared ", games.count("coc"))
+print("index at which limbo appears is : ", games.index("limbo"))
+
+
+# unpacking
+unpk = (5, 6, 7)
+x, y, z = unpk
+print(x)
+print(y)
+print(z)
+
+# dictionary
+customer = {
+    "name": "Aditya Pawar",
+    "age": 20,
+    "is_verified": True
+}
+print(customer)
+print(customer["name"])
+print(customer.get("age"))
+print(customer.get("birthdate", "April 14 2001"))
+customer["name"] = "Aaditya Pawar"
+print(customer["name"])
+
+
+# functions and parameters
+def greet_user(first_name, last_name) :
+    print(f"hi {first_name} {last_name}")
+    print("welcome aboard!")
+
+    
+print("start")
+greet_user("aditya", "pawar")
+print("finish")
+
+
+# keyword arguments 
+greet_user(first_name="aditya", last_name="pawar")
+
+
+# return
+def square(number):
+    return number * number
+    
+    
+print(square(4))
